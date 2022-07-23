@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #f0f0f0;
+  font-family: sans-serif;
+  height: 100vh;
+}
+
+header {
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 60px;
+  background-color: rgb(27, 163, 236);
+  align-items: center;
+}
+
+header h1 {
+  color: #fff;
+  border-bottom: 3px solid #fff;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+ul li a {
+  text-decoration: none;
+  font-size: 22px;
+  font-weight: bold;
+  color: #fff;
+  border-bottom: 3px solid #fff;
+}
+
+section {
+  width: 800px;
+  height: 450px;
+  background-color: #fff;
+  /* margin-top: 10px;
+  margin-left: 10px; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid #666;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.me {
+  color: dodgerblue;
+}
+
+section h1 {
+  color: dodgerblue;
+  padding: 30px;
+  margin-bottom: 30px;
+  font-size: 35px;
+}
+
+section .link-container,
+.format-container,
+.button-container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+  width: 500px;
+}
+
+section .link-container input,
+.format-container select {
+  outline: none;
+  height: 35px;
+  border-radius: 5px;
+  padding: 0 10px;
+  border: 2px solid #666;
+  font-size: 14px;
+}
+
+section .button-container button {
+  height: 50px;
+  border-radius: 5px;
+  font-size: 20px;
+  border: none;
+  color: #fff;
+  background-color: dodgerblue;
+  cursor: pointer;
+}
+
+@media (max-width: 850px) {
+  section {
+    width: 500px;
+  }
+  section .link-container,
+  .format-container,
+  .button-container {
+    width: 300px;
+  }
+}
+
+@media (max-width: 550px) {
+  header h1 {
+    font-size: 22px;
+  }
+  header ul li a {
+    font-size: 18px;
+  }
+  section {
+    width: 350px;
+    height: 450;
+  }
+  section .link-container,
+  .format-container,
+  .button-container {
+    width: 300px;
+  }
+
+  section h2 {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 385px) {
+  section {
+    width: 300px;
+    height: 450;
+  }
+  section .link-container,
+  .format-container,
+  .button-container {
+    width: 250px;
+  }
+}
